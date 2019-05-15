@@ -1,6 +1,8 @@
 <?php
 //LINE API Setting
-define('LINE_MESSAGE_CHANNEL_ID','');
-define('LINE_MESSAGE_CHANNEL_SECRET','');
-define('LINE_MESSAGE_ACCESS_TOKEN','');
+define('LINE_MESSAGE_CHANNEL_ID','1574846284');
+define('LINE_MESSAGE_CHANNEL_SECRET','
+e2bf06fc109cda8fa99b3bccb7fbbc0a
+');
+define('LINE_MESSAGE_ACCESS_TOKEN','R2gkgAz2jEROfnm5f3UbUwW7+bvF3Hfbj0FuVq6IMowugV6nRroW6NFCzbcqEcRCiFWTaNvGkom0AAuBGEXB4TAdkoGwSM2VoWGtVw/ptigvZx8D95n6MgbsiKWcbeSnfKd+UhswfKvyUuVgbQvBVQdB04t89/1O/w1cDnyilFU=');
  ?>
