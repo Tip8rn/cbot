@@ -74,7 +74,7 @@ if(!is_null($events)){
         case 'text':
             switch ($userMessage) {
                 case "t":
-                    $textReplyMessage = "CBot Tip";
+                    $textReplyMessage = "CBot Tiptest";
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
                 case "i":
