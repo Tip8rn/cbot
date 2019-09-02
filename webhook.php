@@ -137,12 +137,8 @@ if(!is_null($events)){
                         )
                     );
                     break;
-                case "บันได":
-                    $picFullSize = 'https://cloud.ddc.moph.go.th/index.php/s/LtaNfHrpPKiTsHa';
-                    $picThumbnail = 'https://cloud.ddc.moph.go.th/index.php/apps/files_sharing/ajax/publicpreview.php?x=1366&y=226&a=true&file=staircase10.png&t=LtaNfHrpPKiTsHa&scalingup=0';
-                    $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
-                    break;
-                    case "สถานการณ์โรค":
+
+                case "สถานการณ์โรค":
                         // กำหนด action 4 ปุ่ม 4 ประเภท
                         $actionBuilder1 = array(
                           // new PostbackTemplateActionBuilder(
