@@ -268,7 +268,7 @@ if(!is_null($events)){
                             ),
                           new UriTemplateActionBuilder(
                                 'ติดต่อกองงานฯ', // ข้อความแสดงในปุ่ม
-                                '02 590 3818'
+                                'https://ddc.moph.go.th/th/site/office/view/btc'
                             ),
                         );
                         $actionBuilder2 = array(
