@@ -221,16 +221,22 @@ if(!is_null($events)){
 
 
              case "สถานการณ์บุหรี่":
+             case "สถานการณ์ยาสูบ":
+             case "สถานการณ์":
                     $textReplyMessage = "https://cloud.ddc.moph.go.th/index.php/s/oI67YsUuyGyhnxY";
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
 
              case "ยส":
+             case "ยส3":
+             case "ยส.3":
                     $textReplyMessage = "http://btc.ddc.moph.go.th/th/04/login.php";
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
 
              case "บันได":
+             case "บันได10ขั้น":
+             case "10ขั้น":
                     $picFullSize = 'https://cloud.ddc.moph.go.th/index.php/s/LtaNfHrpPKiTsHa';
                     $picThumbnail = 'https://cloud.ddc.moph.go.th/index.php/apps/files_sharing/ajax/publicpreview.php?x=1366&y=226&a=true&file=staircase10.png&t=LtaNfHrpPKiTsHa&scalingup=0';
                     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
