@@ -268,7 +268,7 @@ if(!is_null($events)){
                             ),
                           new UriTemplateActionBuilder(
                                 'ติดต่อกองงานฯ', // ข้อความแสดงในปุ่ม
-                                'หมายเลขโทรศัพท์ : 02 590 3818'
+                                '02 590 3818'
                             ),
                         );
                         $actionBuilder2 = array(
