@@ -243,10 +243,11 @@ if(!is_null($events)){
                     break;
 
              case "โรคกับบุหรี่":
+             case "โรคจากบุหรี่":
              case "โรคที่เกี่ยวกับบุหรี่":
              case "โรคที่เกิดจากบุหรี่":
-                    $picFullSize = 'https://cloud.ddc.moph.go.th/index.php/s/ai1xLEHTYgJZsyo';
-                    $picThumbnail = 'https://cloud.ddc.moph.go.th/index.php/s/ai1xLEHTYgJZsyo';
+                    $picFullSize = 'https://cloud.ddc.moph.go.th/index.php/apps/files_sharing/ajax/publicpreview.php?x=1366&y=226&a=true&file=TC_Health.jpg&t=ai1xLEHTYgJZsyo&scalingup=0';
+                    $picThumbnail = 'https://cloud.ddc.moph.go.th/index.php/apps/files_sharing/ajax/publicpreview.php?x=1366&y=226&a=true&file=TC_Health.jpg&t=ai1xLEHTYgJZsyo&scalingup=0';
                     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
                     break;
 
