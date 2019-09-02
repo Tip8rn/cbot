@@ -216,6 +216,10 @@ if(!is_null($events)){
                         );
                     break;
 
+       
+
+
+
              case "สถานการณ์บุหรี่":
                     $textReplyMessage = "https://cloud.ddc.moph.go.th/index.php/s/oI67YsUuyGyhnxY";
                     $replyData = new TextMessageBuilder($textReplyMessage);
@@ -225,6 +229,16 @@ if(!is_null($events)){
                     $textReplyMessage = "http://btc.ddc.moph.go.th/th/04/login.php";
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
+
+             case "บันได":
+                    $picFullSize = 'https://cloud.ddc.moph.go.th/index.php/s/LtaNfHrpPKiTsHa';
+                    $picThumbnail = 'https://cloud.ddc.moph.go.th/index.php/apps/files_sharing/ajax/publicpreview.php?x=1366&y=226&a=true&file=staircase10.png&t=LtaNfHrpPKiTsHa&scalingup=0';
+                    $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
+                    break;
+
+
+
+
 
                 default:
                     $textReplyMessage = " คุณไม่ได้พิมพ์ ค่า ตามที่กำหนด";
