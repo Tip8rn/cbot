@@ -305,19 +305,19 @@ if(!is_null($events)){
                                     new CarouselColumnTemplateBuilder(
                                         'โรคไข้เลือดออก',
                                         'รายละเอียด-โรคไข้เลือดออก',
-                                        null,
+                                        'http://flu.ddc.moph.go.th/image-line/dhf_c.jpg',
                                         $actionBuilder1
                                     ),
                                     new CarouselColumnTemplateBuilder(
                                         'โรคมือเท้าปาก',
                                         'รายละเอียด-โรคมือเท้าปาก',
-                                        null,
+                                        'http://flu.ddc.moph.go.th/image-line/hfm_c.jpg',
                                         $actionBuilder2
                                     ),
                                     new CarouselColumnTemplateBuilder(
                                         'โรคไข้หวัดใหญ่',
                                         'รายละเอียด-โรคไข้หวัดใหญ่',
-                                        null,
+                                        'http://flu.ddc.moph.go.th/image-line/flu_c.jpg',
                                         $actionBuilder3
                                     ),
                                 )
