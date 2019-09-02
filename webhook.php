@@ -242,6 +242,13 @@ if(!is_null($events)){
                     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
                     break;
 
+             case "โรคกับบุหรี่":
+             case "โรคที่เกี่ยวกับบุหรี่":
+             case "โรคที่เกิดจากบุหรี่":
+                    $picFullSize = 'https://cloud.ddc.moph.go.th/index.php/s/ai1xLEHTYgJZsyo';
+                    $picThumbnail = 'https://cloud.ddc.moph.go.th/index.php/s/ai1xLEHTYgJZsyo';
+                    $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
+                    break;
 
 
 
