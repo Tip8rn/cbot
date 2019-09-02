@@ -137,8 +137,7 @@ if(!is_null($events)){
                         )
                     );
                     break;
-
-                case "สถานการณ์โรค":
+                    case "สถานการณ์โรค":
                         // กำหนด action 4 ปุ่ม 4 ประเภท
                         $actionBuilder1 = array(
                           // new PostbackTemplateActionBuilder(
@@ -232,6 +231,8 @@ if(!is_null($events)){
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
             }
+            break;
+
         default:
             $textReplyMessage = json_encode($events);
             $replyData = new TextMessageBuilder($textReplyMessage);
