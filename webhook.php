@@ -262,21 +262,14 @@ if(!is_null($events)){
                                 'ข้อมูลติดต่อ', // ข้อความแสดงในปุ่ม
                                 'https://flu.ddc.moph.go.th/bot/chart.php?disease_code=26-27-66'
                             ),
-                        new UriTemplateActionBuilder(
-                                'อาการของโรค', // ข้อความแสดงในปุ่ม
-                                'https://ddc.moph.go.th/th/site/disease/detail/44/symptom'
-                            ),
+
                         );
                     $actionBuilder2 = array(
                         new UriTemplateActionBuilder(
                                     'สถานการณ์โรค', // ข้อความแสดงในปุ่ม
                                     'https://flu.ddc.moph.go.th/bot/chart.php?disease_code=71'
                                 ),
-                        new UriTemplateActionBuilder(
-                                    'อาการของโรค', // ข้อความแสดงในปุ่ม
-                                    'https://ddc.moph.go.th/th/site/disease/detail/11/symptom'
-                                ),
-                        );
+
                     
                         $replyData = new TemplateMessageBuilder('Carousel',
                             new CarouselTemplateBuilder(
