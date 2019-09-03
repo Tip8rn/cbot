@@ -137,6 +137,7 @@ if(!is_null($events)){
                         )
                     );
                     break;
+
                     case "สถานการณ์โรค":
                         // กำหนด action 4 ปุ่ม 4 ประเภท
                         $actionBuilder1 = array(
@@ -254,78 +255,65 @@ if(!is_null($events)){
                     break;
 
 
-             case "เกี่ยวกับหน่วยงาน":
              case "เกี่ยวกับสำนักยาสูบ":
-             case "สำนักควบคุมการบริโภคยาสูบ":
-             case "กองงานคณะกรรมการควบคุมผลิตภัณฑ์ยาสูบ":
-
                         // กำหนด action 4 ปุ่ม 4 ประเภท
-                        $actionBuilder1 = array(
-                        
-                          new UriTemplateActionBuilder(
-                                'เกี่ยวกับกองงานฯ', // ข้อความแสดงในปุ่ม
-                                'https://ddc.moph.go.th/th/site/office/view/btc'
+                    $actionBuilder1 = array(
+                        new UriTemplateActionBuilder(
+                                'สถานการณ์โรค', // ข้อความแสดงในปุ่ม
+                                'https://flu.ddc.moph.go.th/bot/chart.php?disease_code=26-27-66'
                             ),
-                          new UriTemplateActionBuilder(
-                                'ติดต่อกองงานฯ', // ข้อความแสดงในปุ่ม
-                                'https://ddc.moph.go.th/th/site/office/view/btc'
+                        new UriTemplateActionBuilder(
+                                'อาการของโรค', // ข้อความแสดงในปุ่ม
+                                'https://ddc.moph.go.th/th/site/disease/detail/44/symptom'
                             ),
                         );
-                        $actionBuilder2 = array(
-                           
-                              new UriTemplateActionBuilder(
+                    $actionBuilder2 = array(
+                        new UriTemplateActionBuilder(
                                     'สถานการณ์โรค', // ข้อความแสดงในปุ่ม
                                     'https://flu.ddc.moph.go.th/bot/chart.php?disease_code=71'
                                 ),
-                              new UriTemplateActionBuilder(
+                        new UriTemplateActionBuilder(
                                     'อาการของโรค', // ข้อความแสดงในปุ่ม
                                     'https://ddc.moph.go.th/th/site/disease/detail/11/symptom'
                                 ),
                         );
                         $actionBuilder3 = array(
-                                  // new PostbackTemplateActionBuilder(
-                                  //     'สถาณการณ์โรค', // ข้อความแสดงในปุ่ม
-                                  //     http_build_query(array(
-                                  //         'disease_code'=>'13',
-                                  //     )), // ข้อมูลที่จะส่งไปใน webhook ผ่าน postback event
-                                  //     'สถานการณ์โรค'  // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
-                                  // ),
-                                  new UriTemplateActionBuilder(
+                        new UriTemplateActionBuilder(
                                         'สถานการณ์โรค', // ข้อความแสดงในปุ่ม
                                         'https://flu.ddc.moph.go.th/bot/chart.php?disease_code=15'
                                     ),
-                                  new UriTemplateActionBuilder(
+                        new UriTemplateActionBuilder(
                                         'อาการของโรค', // ข้อความแสดงในปุ่ม
                                         'https://ddc.moph.go.th/th/site/disease/detail/13/symptom'
                                     ),
                         );
+
                         $replyData = new TemplateMessageBuilder('Carousel',
                             new CarouselTemplateBuilder(
                                 array(
                                     new CarouselColumnTemplateBuilder(
                                         'โรคไข้เลือดออก',
                                         'รายละเอียด-โรคไข้เลือดออก',
-                                        'http://flu.ddc.moph.go.th/image-line/dhf_c.jpg',
+                                        'https://flu.ddc.moph.go.th/image-line/dhf_c.jpg',
                                         $actionBuilder1
                                     ),
                                     new CarouselColumnTemplateBuilder(
                                         'โรคมือเท้าปาก',
                                         'รายละเอียด-โรคมือเท้าปาก',
-                                        'http://flu.ddc.moph.go.th/image-line/hfm_c.jpg',
+                                        'https://flu.ddc.moph.go.th/image-line/hfm_c.jpg',
                                         $actionBuilder2
                                     ),
                                     new CarouselColumnTemplateBuilder(
                                         'โรคไข้หวัดใหญ่',
                                         'รายละเอียด-โรคไข้หวัดใหญ่',
-                                        'http://flu.ddc.moph.go.th/image-line/flu_c.jpg',
+                                        'https://flu.ddc.moph.go.th/image-line/flu_c.jpg',
                                         $actionBuilder3
                                     ),
                                 )
                             )
                         );
                     break;
-
-
+            
 
 
 
