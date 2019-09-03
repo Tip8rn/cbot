@@ -265,11 +265,12 @@ if(!is_null($events)){
 
                         );
                     $actionBuilder2 = array(
-                        new UriTemplateActionBuilder(
-                                    'สถานการณ์โรค', // ข้อความแสดงในปุ่ม
-                                    'https://flu.ddc.moph.go.th/bot/chart.php?disease_code=71'
-                                ),
 
+                        new UriTemplateActionBuilder(
+                                'สถานการณ์โรค', // ข้อความแสดงในปุ่ม
+                                'https://flu.ddc.moph.go.th/bot/chart.php?disease_code=71'
+                            ),
+                        );
                     
                         $replyData = new TemplateMessageBuilder('Carousel',
                             new CarouselTemplateBuilder(
