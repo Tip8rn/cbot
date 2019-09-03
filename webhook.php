@@ -256,7 +256,7 @@ if(!is_null($events)){
 
 
              case "เกี่ยวกับสำนักยาสูบ":
-                        // กำหนด action 4 ปุ่ม 4 ประเภท
+
                     $actionBuilder1 = array(
                         new UriTemplateActionBuilder(
                                 'รายละเอียด', // ข้อความแสดงในปุ่ม
@@ -279,6 +279,7 @@ if(!is_null($events)){
                                         'http://www.riskcomthai.org/images/Logo/Logo-%E0%B8%84%E0%B8%A3-2016.jpg',
                                         $actionBuilder1
                                     ),
+
                                     new CarouselColumnTemplateBuilder(
                                         'ทำเนียบบุคลากร',
                                         'https://flu.ddc.moph.go.th/image-line/hfm_c.jpg',
@@ -288,10 +289,9 @@ if(!is_null($events)){
                                 )
                             )
                         );
-                    break;
+                    
+                break;
             
-
-
 
                 default:
                     $textReplyMessage = " คุณไม่ได้พิมพ์ ค่า ตามที่กำหนด";
