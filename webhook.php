@@ -259,31 +259,28 @@ if(!is_null($events)){
                         // กำหนด action 4 ปุ่ม 4 ประเภท
                     $actionBuilder1 = array(
                         new UriTemplateActionBuilder(
-                                'ข้อมูลติดต่อ', // ข้อความแสดงในปุ่ม
-                                'https://flu.ddc.moph.go.th/bot/chart.php?disease_code=26-27-66'
+                                'รายละเอียด', // ข้อความแสดงในปุ่ม
+                                'https://ddc.moph.go.th/th/site/office/view/btc'
                             ),
-
                         );
+
                     $actionBuilder2 = array(
-
                         new UriTemplateActionBuilder(
-                                'สถานการณ์โรค', // ข้อความแสดงในปุ่ม
-                                'https://flu.ddc.moph.go.th/bot/chart.php?disease_code=71'
+                                'รายละเอียด', // ข้อความแสดงในปุ่ม
+                                'https://ddc.moph.go.th/th/site/office/about/btc/org'
                             ),
                         );
-                    
+
                         $replyData = new TemplateMessageBuilder('Carousel',
                             new CarouselTemplateBuilder(
                                 array(
                                     new CarouselColumnTemplateBuilder(
-                                        'โรคไข้เลือดออก',
-                                        'รายละเอียด-โรคไข้เลือดออก',
-                                        'https://flu.ddc.moph.go.th/image-line/dhf_c.jpg',
+                                        'กองงานคณะกรรมการควบคุมผลิตภัณฑ์ยาสูบ',
+                                        'http://www.riskcomthai.org/images/Logo/Logo-%E0%B8%84%E0%B8%A3-2016.jpg',
                                         $actionBuilder1
                                     ),
                                     new CarouselColumnTemplateBuilder(
-                                        'โรคมือเท้าปาก',
-                                        'รายละเอียด-โรคมือเท้าปาก',
+                                        'ทำเนียบบุคลากร',
                                         'https://flu.ddc.moph.go.th/image-line/hfm_c.jpg',
                                         $actionBuilder2
                                     ),
