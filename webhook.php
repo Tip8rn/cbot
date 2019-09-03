@@ -274,18 +274,20 @@ if(!is_null($events)){
                         $replyData = new TemplateMessageBuilder('Carousel',
                             new CarouselTemplateBuilder(
                                 array(
+
                                     new CarouselColumnTemplateBuilder(
                                         'กองงานคณะกรรมการควบคุมผลิตภัณฑ์ยาสูบ',
-                                        'http://www.riskcomthai.org/images/Logo/Logo-%E0%B8%84%E0%B8%A3-2016.jpg',
+                                        'https://flu.ddc.moph.go.th/image-line/hfm_c.jpg',
                                         $actionBuilder1
                                     ),
+
 
                                     new CarouselColumnTemplateBuilder(
                                         'ทำเนียบบุคลากร',
                                         'https://flu.ddc.moph.go.th/image-line/hfm_c.jpg',
                                         $actionBuilder2
                                     ),
-                                
+
                                 )
                             )
                         );
