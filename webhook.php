@@ -259,12 +259,8 @@ if(!is_null($events)){
                         // กำหนด action 4 ปุ่ม 4 ประเภท
                     $actionBuilder1 = array(
                         new UriTemplateActionBuilder(
-                                'สถานการณ์โรค', // ข้อความแสดงในปุ่ม
+                                'ข้อมูลติดต่อ', // ข้อความแสดงในปุ่ม
                                 'https://flu.ddc.moph.go.th/bot/chart.php?disease_code=26-27-66'
-                            ),
-                        new UriTemplateActionBuilder(
-                                'อาการของโรค', // ข้อความแสดงในปุ่ม
-                                'https://ddc.moph.go.th/th/site/disease/detail/44/symptom'
                             ),
                         );
                     $actionBuilder2 = array(
@@ -277,7 +273,7 @@ if(!is_null($events)){
                                     'https://ddc.moph.go.th/th/site/disease/detail/11/symptom'
                                 ),
                         );
-                        $actionBuilder3 = array(
+                    $actionBuilder3 = array(
                         new UriTemplateActionBuilder(
                                         'สถานการณ์โรค', // ข้อความแสดงในปุ่ม
                                         'https://flu.ddc.moph.go.th/bot/chart.php?disease_code=15'
