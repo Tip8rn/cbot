@@ -291,23 +291,7 @@ if(!is_null($events)){
                                     'https://ddc.moph.go.th/th/site/disease/detail/11/symptom'
                                 ),
                         );
-                        $actionBuilder3 = array(
-                                  // new PostbackTemplateActionBuilder(
-                                  //     'สถาณการณ์โรค', // ข้อความแสดงในปุ่ม
-                                  //     http_build_query(array(
-                                  //         'disease_code'=>'13',
-                                  //     )), // ข้อมูลที่จะส่งไปใน webhook ผ่าน postback event
-                                  //     'สถานการณ์โรค'  // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
-                                  // ),
-                                  new UriTemplateActionBuilder(
-                                        'สถานการณ์โรค', // ข้อความแสดงในปุ่ม
-                                        'https://flu.ddc.moph.go.th/bot/chart.php?disease_code=15'
-                                    ),
-                                  new UriTemplateActionBuilder(
-                                        'อาการของโรค', // ข้อความแสดงในปุ่ม
-                                        'https://ddc.moph.go.th/th/site/disease/detail/13/symptom'
-                                    ),
-                        );
+                 
                         $replyData = new TemplateMessageBuilder('Carousel',
                             new CarouselTemplateBuilder(
                                 array(
@@ -323,12 +307,7 @@ if(!is_null($events)){
                                         'https://flu.ddc.moph.go.th/image-line/hfm_c.jpg',
                                         $actionBuilder2
                                     ),
-                                    new CarouselColumnTemplateBuilder(
-                                        'โรคไข้หวัดใหญ่',
-                                        'รายละเอียด-โรคไข้หวัดใหญ่',
-                                        'https://flu.ddc.moph.go.th/image-line/flu_c.jpg',
-                                        $actionBuilder3
-                                    ),
+                                
                                 )
                             )
                         );
