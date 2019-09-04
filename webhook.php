@@ -258,13 +258,7 @@ if(!is_null($events)){
             case "testrich":
                         // กำหนด action 4 ปุ่ม 4 ประเภท
                         $actionBuilder1 = array(
-                          // new PostbackTemplateActionBuilder(
-                          //     'สถาณการณ์โรค', // ข้อความแสดงในปุ่ม
-                          //     http_build_query(array(
-                          //         'disease_code'=>'26,27,66',
-                          //     )), // ข้อมูลที่จะส่งไปใน webhook ผ่าน postback event
-                          //     'สถานการณ์-โรคไข้เลือดออก'  // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
-                          // ),
+           
                           new UriTemplateActionBuilder(
                                 'สถานการณ์โรค', // ข้อความแสดงในปุ่ม
                                 'https://flu.ddc.moph.go.th/bot/chart.php?disease_code=26-27-66'
@@ -275,19 +269,13 @@ if(!is_null($events)){
                             ),
                         );
                         $actionBuilder2 = array(
-                              // new PostbackTemplateActionBuilder(
-                              //     'สถาณการณ์โรค', // ข้อความแสดงในปุ่ม
-                              //     http_build_query(array(
-                              //         'disease_code'=>'11',
-                              //     )), // ข้อมูลที่จะส่งไปใน webhook ผ่าน postback event
-                              //     'สถานการณ์-โรคมือเท้าปาก'  // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
-                              // ),
+            
                               new UriTemplateActionBuilder(
-                                    'สถานการณ์โรค', // ข้อความแสดงในปุ่ม
+                                    'รายละเอียด', // ข้อความแสดงในปุ่ม
                                     'https://flu.ddc.moph.go.th/bot/chart.php?disease_code=71'
                                 ),
                               new UriTemplateActionBuilder(
-                                    'อาการของโรค', // ข้อความแสดงในปุ่ม
+                                    'รายละเอียด', // ข้อความแสดงในปุ่ม
                                     'https://ddc.moph.go.th/th/site/disease/detail/11/symptom'
                                 ),
                         );
